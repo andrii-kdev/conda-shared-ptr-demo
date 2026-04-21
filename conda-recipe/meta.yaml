@@ -1,0 +1,33 @@
+{% set boost_version = "1.82.0" %}
+
+package:
+  name: shared-ptr-demo
+  version: "1.0.0"
+
+about:
+  home: https://github.com
+  license: MIT
+  summary: "A C++ demonstration of custom shared_ptr implementation with Boost dependencies"
+
+
+build:
+  number: 0
+  skip: true  # [not linux]
+
+source:
+  path: ..
+
+requirements:
+  build:
+    - {{ compiler('cxx') }}
+    - cmake
+    - make
+  host:
+    - boost-cpp {{ boost_version }}
+    - libboost {{ boost_version }}
+  run:
+    - libboost {{ boost_version }}
+
+test:
+  commands:
+    - shared-ptr-demo
