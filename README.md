@@ -1,5 +1,9 @@
 # Conda Package (shared-ptr-demo)
-This package provides just a basic test implementation of shared ptr with a CMake-based build system and external dependencies (boost).
+
+[![Conda Version](https://img.shields.io/anaconda/v/andrii-kdev/shared-ptr-demo)](https://anaconda.org/andrii-kdev/shared-ptr-demo)
+[![Conda Platforms](https://img.shields.io/anaconda/pn/andrii-kdev/shared-ptr-demo)](https://anaconda.org/andrii-kdev/shared-ptr-demo)
+
+This package provides just a basic test С++ implementation of shared ptr with a CMake-based build system and external dependencies (boost).
 The package is currently built and tested for **Linux-64** only.
 
 ## Prerequisites
@@ -51,5 +55,5 @@ rm -rf ./artifacts
 ```bash
 # Just install pre-built package from public channel (uploaded to Anaconda.org).
 # You may also create/remove your own conda test env as described in steps above.
-conda install -c <your_username> shared-ptr-demo
+conda install -c andrii-kdev shared-ptr-demo
 ```

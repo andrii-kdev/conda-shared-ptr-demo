@@ -2,12 +2,16 @@
 
 package:
   name: shared-ptr-demo
-  version: "1.0.0"
+  version: "1.0.1"
 
 about:
-  home: https://github.com
+  home: https://github.com/andrii-kdev/conda-shared-ptr-demo
   license: MIT
   summary: "A C++ demonstration of custom shared_ptr implementation with Boost dependencies"
+  description: |
+    A demo project showing how to implement a smart pointer (shared_ptr)
+    using C++17, control block management and atomic reference counters.
+    Packaged for Conda with Boost dependencies.
 
 
 build:
